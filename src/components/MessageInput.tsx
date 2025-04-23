@@ -45,7 +45,7 @@ export const MessageInput = ({ onSendMessage, disabled = false }: MessageInputPr
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Type your message..."
+          placeholder={disabled ? "Please select an AI model first" : "Type your message..."}
           className="pr-12 resize-none min-h-[60px] max-h-[200px] border border-gray-300 dark:border-gray-600 rounded-lg"
           disabled={disabled}
           rows={1}
@@ -62,7 +62,7 @@ export const MessageInput = ({ onSendMessage, disabled = false }: MessageInputPr
       
       {disabled && (
         <p className="text-sm text-yellow-600 dark:text-yellow-400 mt-2">
-          Please wait for the AI to finish responding...
+          Please select an AI model to start chatting
         </p>
       )}
     </form>
