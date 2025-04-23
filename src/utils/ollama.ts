@@ -1,4 +1,3 @@
-
 /**
  * Utility functions for interacting with the Ollama API
  */
@@ -45,17 +44,15 @@ const OLLAMA_API_URL = "http://localhost:11434/api";
  */
 export const fetchAvailableModels = async (): Promise<OllamaModel[]> => {
   try {
-    const response = await fetch(`${OLLAMA_API_URL}/tags`);
-    
+    const response = await fetch('/api/api/tags');
     if (!response.ok) {
-      throw new Error(`Failed to fetch models: ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
     const data = await response.json();
     return data.models || [];
   } catch (error) {
-    console.error("Error fetching Ollama models:", error);
-    return [];
+    console.error('Error fetching Ollama models:', error);
+    throw error;
   }
 };
 
