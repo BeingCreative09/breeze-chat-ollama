@@ -16,6 +16,11 @@ export default defineConfig(({ mode }) => ({
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
+    },
+    cors: {
+      origin: '*',
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowedHeaders: ['Content-Type', 'Authorization']
     }
   },
   plugins: [
@@ -29,3 +34,4 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
