@@ -1,8 +1,50 @@
-# Welcome to your Lovable project
+
+# Breeze Chat Ollama - Progressive Web App
+
+A modern chat interface for Ollama models that works as a Progressive Web App (PWA).
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/018cf434-c568-45fb-9198-5d1c8521084d
+
+## Features
+
+- Chat with any Ollama model installed on your system
+- Clean, responsive UI that works on desktop and mobile
+- **Progressive Web App (PWA) capabilities:**
+  - Installable on desktop and mobile devices
+  - Works offline (basic functionality)
+  - App-like experience with full-screen mode
+
+## Installation
+
+### Run the application
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+### Install as a PWA
+
+1. Open the application in a compatible browser (Chrome, Edge, Safari, etc.)
+2. Look for the install icon in the address bar or browser menu
+3. Click "Install" or "Add to Home Screen"
+4. The app will now appear on your device like a native application
+
+## Requirements
+
+- [Ollama](https://ollama.ai/) running locally on your system
+- Web browser with PWA support
 
 ## How can I edit this code?
 
@@ -20,22 +62,6 @@ If you want to work locally using your own IDE, you can clone this repo and push
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
 **Edit a file directly in GitHub**
 
 - Navigate to the desired file(s).
@@ -50,15 +76,14 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
+## Technologies Used
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+- PWA (Progressive Web App) capabilities
 
 ## How can I deploy this project?
 
